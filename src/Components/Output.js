@@ -27,12 +27,12 @@ class Output extends Component {
     return (
       <div className="output">
         <h3>
-          {height}
+          {height}cm
           <span className="imperial"> {heightFeet}</span>
         </h3>
         <h3>
-          {weight}
-          <span className="imperial"> {pounds}</span>  
+          {weight}kg
+          <span className="imperial"> {pounds}lbs</span>  
         </h3>
         <h3>{bmi}</h3>
         <h3>{bmiClass}</h3>

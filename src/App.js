@@ -7,8 +7,8 @@ class App extends Component {
   constructor(props){
     super(props); 
     this.state = {
-      height: 170,
-      weight: 65, 
+      height: 175,
+      weight: 73, 
       bmi: 22.49, 
       bmiClass: 'Normal'
     }
