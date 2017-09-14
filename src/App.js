@@ -13,6 +13,15 @@ class App extends Component {
       bmiClass: 'Normal'
     }
   }
+
+  heightChange = (height) => {
+    this.setState({ height: height}); 
+  }
+
+  weightChange = (weight) => {
+    this.setState({ weight: weight }); 
+  }
+
   render() {
     return (
       <div className="App">
@@ -20,11 +29,15 @@ class App extends Component {
         <form>
           <div>
             <label>Height</label>
-            <Range />
+            <Range 
+              value={this.state.height} 
+              onChange={this.heightChange} />
           </div>
           <div>
             <label>Weight</label>
-            <Range />
+            <Range 
+              value={this.state.weight}
+              onChange={this.weightChange} />
           </div>
         </form>
         <Output />
